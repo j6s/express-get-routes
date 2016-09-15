@@ -19,11 +19,16 @@ interface Route {
 
 ```JavaScript
 import * as express from 'express';
-import * as getRoutes from 'express-get-routes';
+import {getRoutes} from 'express-get-routes';
 
 let app = express();
 // ... setup app
 
 // contains an array of routes
 let routes = getRoutes(app);
+
+// print every route to the console
+routes.forEach((route) => {
+  console.log(route.path);
+})
 ```
