@@ -4,9 +4,14 @@
   "description": "",
   "main": "express-get-routes.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/express": "^4.0.32",
+    "typescript": "^2.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "clean": "rm *.js *.js.map",
+    "prepublish": "npm run clean; npm run build"
   },
   "repository": {
     "type": "git",
