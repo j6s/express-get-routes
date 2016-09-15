@@ -8,6 +8,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/j6s/express-get-routes.git"
+  },
+  "author": "Johannes Hertenstein <johannes@thej6s.com>",
+  "license": "GPLv3"
 }
